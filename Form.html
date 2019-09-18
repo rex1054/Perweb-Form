@@ -1,0 +1,218 @@
+<html>
+<head>
+	<title>Infinity - Menuju Tak Terbatas dan Melampauinya</title>
+
+	<script>
+	function printWindow(){
+	   bV = parseInt(navigator.appVersion)
+	   if (bV >= 4) window.print()
+	}
+	</script>
+
+	<style>
+
+	.inputs {
+		width:100%;
+		height:45px;
+		border: 1px solid black;
+		border-radius: 7px;
+		background: transparent;
+		padding-left: 3%;
+		padding-right: 3%;
+	}
+	#print {
+		background:url('print.png') no-repeat;
+	}
+
+	header {
+		background-color: blue;
+		background: rgba(0,0,200,0.8);
+	}
+	#mid {
+		color: black;
+		font-size: 24px;
+	}
+	footer {
+		background-color: blue;
+		background: rgba(0,0,200,0.8); 
+	}
+	#ab {
+		color: silver;
+    font-family: verdana;
+    font-size: 36px;
+    padding-left: 10px;
+	}
+	#bc {
+		color: silver;
+    font-family: courier;
+    font-size: 18px;
+    padding-left: 10px;
+	}
+	#cd {
+		color: black;
+    font-family: courier;
+    font-size: 18px;
+    padding-left: 10px;	
+	}
+	h2 {
+		color: silver;
+    font-family: courier;
+    font-size: 14px;
+	}
+	#lefts {
+		width: 20%;
+		padding-left: 3%;
+	}
+	#rights {
+		width: 80%;
+		padding-left: 3%;
+		padding-right: 3%;
+	}
+	#tengah {
+		background-color: rgba(222,222,222,0.4);
+		padding-bottom: 4%;
+		padding-top: 4%;
+	}
+	textarea {
+		border: 1px solid black;
+		border-radius: 7px;
+		width: 100%;
+		background-color: silver;
+		padding-left: 3%;
+
+	}
+	.tombol {
+		background-color: blue;
+		color: silver;
+		padding: 5px;
+		margin-left: 3%;
+		width: 100px;
+		height: 50px;
+		border-radius: 7px;
+		border: 3px solid yellow;
+		font-size: 20px;
+	}
+	</style>
+</head>
+<body background="bg.jpg">
+	<header>
+		<table>
+			<tr>
+				<ab id="ab"><b>Infinity - FASILKOM UNEJ</b></ab><br>
+			</tr><tr>
+				<a href="http://infinity.ilkom.unej.ac.id">
+					<bc id="bc" style="color: yellow; font-size: 12px"><i><u>http://infinity.cs.unej.ac.id</u></i></bc><br>
+				</a>
+			</tr><tr>
+				<bc id="bc"><i>Menuju Tak Terbatas dan Melampauinya</i></bc>
+			</tr>
+		</table>
+	</header><br>
+	<div id="tengah">
+	<div>
+	</div>
+		<table bgcolor="silver" width="90%" align="center" style="padding-top: 3%; padding-bottom: 3%">
+		<tr>
+			<td colspan="2" align="center">
+				<h2 id="mid">FORM</h2>
+			</td>
+		</tr>
+			<tr>
+				<td id="lefts">
+					<label>Nama</label>
+				</td>
+				<td id="rights">
+				<input type="text" name="name" class="inputs" id="name" placeholder="Input Nama" required autofocus>
+				</td>
+			</tr>
+			<tr>
+				<td id="lefts">
+					<label>NIM</label>
+				</td>
+				<td id="rights">
+				<input type="number" class="inputs" name="nim" id="nim" placeholder="Input NIM" required autofocus>
+				</td>
+			</tr>
+			<tr>
+				<td id="lefts">
+					<label>Alamat</label>
+				</td>
+				<td id="rights">
+				<textarea rows="5" class="inputs" id="alamat" placeholder="Input Alamat" required autofocus></textarea>
+				</td>
+			</tr>
+			<tr>
+				<td id="lefts">
+					<label>email</label>
+				</td>
+				<td id="rights">
+				<input type="email" class="inputs" name="email" id="email" placeholder="Input Email" required autofocus>
+				</td>
+			</tr>
+			<tr>
+				<td id="lefts">
+					<label>Password</label>
+				</td>
+				<td id="rights">
+				<input type="password" class="inputs" name="password" id="password" placeholder="Input Passwprd" required autofocus>
+				</td>
+			</tr>
+			<tr>
+				<td id="lefts">
+					<label>Jenis Kelamin</label>
+				</td>
+				<td id="rights">
+				<input type="radio" name="jenis" id="laki" value="laki" checked>Laki-laki
+				<input type="radio" name="jenis" id="perem" value="perem">Perempuan
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center">
+					<input type="submit" class="tombol" name="kumpul" id="kumpul" value="Kumpul" onclick="printWindow()">
+				</td>
+			</tr>
+		</table>
+	</div><br>
+	<footer>
+	<table>
+		<tr>
+		<td width="30%">
+			<bc id="bc">Contact Us :</bc>
+		</td>
+		<td width="30%">
+			<bc id="bc">Contact Me :</bc>
+			</td>
+			<td width="40%" rowspan="4">
+				<img src="img.jpg" style="width: 30%; float: right;">				
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="http://ilkom.unej.ac.id"><bc id="bc" style="font-size: 12">- ILKOM UNEJ</bc></a>
+			</td>
+			<td>
+				<a href="http://fb.com/ahmad.firdaus0204"><bc id="bc" style="font-size: 12">- Facebook</bc></a>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="http://infinity.ilkom.unej.ac.id"><bc id="bc" style="font-size: 12">- Infinity ILKOM UNEJ</bc></a>
+			</td>
+			<td>
+				<a href="http://instagram.com/ahmad_firdaus02"><bc id="bc" style="font-size: 12">- Instagram</bc></a>
+			</td>
+			</tr>
+			<tr>
+			<td>
+				<a href="http://himasif.ilkom.unej.ac.id"><bc id="bc" style="font-size: 12">- HIMASIF UNEJ</bc></a>
+			</td>
+			<td>
+				<a href="http://bit.ly/Rex1054"><bc id="bc" style="font-size: 12">- Whatsapp</bc></a>
+			</td>
+		</tr>
+	</table>
+	<h2 align="center">Powered by <a href="http://ilkom.unej.ac.id" style="color: silver">FASILKOM UNEJ</a> | created by 
+		<a href="http://fb.com/ahmad.firdaus0204" style="color: silver;">Ahmad Firdaus Ababil</a> (162410101054)</h2>
+	</footer>
+</body>
+</html>
